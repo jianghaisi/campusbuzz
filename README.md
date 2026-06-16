@@ -15,6 +15,8 @@
 
 ## 项目预览
 
+### 快速使用：https://campusbuzz.jiangai.space/
+
 ### 内容生成工作台
 
 ![CampusBuzz AI 内容生成工作台](docs/images/content-workbench.png)
