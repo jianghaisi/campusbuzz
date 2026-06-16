@@ -1,45 +1,95 @@
-# 生活内容生成工具-CampusBuzz AI
+<div align="center">
 
-CampusBuzz AI 是一个面向校园周边小商家的本地生活内容生成工具。它可以把一次门店活动、新品信息或产品图片，快速转化为小红书/抖音可发布的种草内容、短视频脚本、拍摄 brief 和封面图。
-快速使用：https://campusbuzz.jiangai.space
 
-## 核心功能
+# 校园周边小商家的本地生活内容 AI Copilot--CampusBuzz AI
 
-- **内容包生成**：根据店铺名、店铺类型、活动、新品、目标人群和内容风格，生成完整种草内容包。
-- **多平台内容适配**：适合小红书、抖音、本地生活团购、校园 KOC 探店等场景。
-- **短视频脚本**：生成 30 秒短视频脚本，包含时间轴、画面安排和口播建议。
-- **拍摄分镜**：输出门头、产品细节、制作过程、真人体验、价格权益等镜头规划。
-- **KOC Brief**：自动整理给学生探店博主的拍摄需求，减少商家和博主反复沟通。
-- **评论区回复**：生成适合种草内容的评论回复话术。
-- **封面图提示词**：根据当前店铺和产品自动生成封面图 prompt。
-- **AI 图片生成**：支持使用 `gpt-image-2` 生成小红书封面图。
-- **上传图片改图**：支持上传奶茶、饭菜、饰品或其他产品图片，并基于提示词进行精修、场景化或商业质感增强。
-- **提示词卡片**：内置三种图片提示词方案：
-  - 精修种草封面
-  - 商业质感大片
-  - 真实探店增强
-- **自定义提示词**：用户可以在内置模板基础上自由修改图片生成/改图要求。
-- **品牌约束**：上传图片中如果包含无关品牌、店名、Logo 或包装文字，系统会提示模型删除或替换为当前店铺名。
-- **历史记录**：浏览器本地保留最近生成的内容，方便回看和复用。
-- **一键复制**：支持复制标题、笔记、脚本、KOC brief 和完整内容包。
+把一次门店活动、新品信息或产品图片，快速转化为小红书/抖音可发布的种草内容、短视频脚本、拍摄 brief 和封面图。
 
-## 适用场景
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111)
+![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=fff)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=fff)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=fff)
+![AI](https://img.shields.io/badge/AI-gpt--5.4--mini%20%7C%20gpt--image--2-black)
 
-- 校园附近奶茶店、餐饮店、美甲店、饰品店、健身房、桌游店等小商家
-- 想做小红书/抖音但缺少内容运营能力的本地商户
-- 接商单的学生 KOC、探店博主、校园代运营团队
-- 需要快速验证本地生活内容 AI 产品机会的创业项目
+</div>
 
-## 技术栈
+## Preview
 
-- Frontend: React + Vite + Nginx
-- Backend: FastAPI + httpx
-- AI API: OpenAI-compatible API
-- Deployment: Docker Compose
+### Content Workbench
 
-## 环境变量
+![CampusBuzz AI content workbench](docs/images/content-workbench.png)
 
-复制 `.env.example` 为 `.env`，并填写模型中转站配置：
+### Generated Content + Cover Workflow
+
+![CampusBuzz AI workspace results](docs/images/workspace-results.png)
+
+### AI Generated Cover
+
+![AI generated cover for Xinghe Milk Tea](docs/images/generated-cover.png)
+
+## What It Does
+
+CampusBuzz AI is designed for campus-area local businesses that need short-form content but do not have a dedicated content team.
+
+It helps merchants turn a simple activity brief into a full publishing package:
+
+- Xiaohongshu / Douyin titles
+- Publish-ready seed content note
+- 30-second short-video script
+- Shot-by-shot filming plan
+- KOC shooting brief
+- Comment reply templates
+- Store-visit conversion copy
+- Cover image prompt
+- AI-generated or AI-edited cover image
+
+## Key Features
+
+| Feature                 | Description                                                  |
+| ----------------------- | ------------------------------------------------------------ |
+| Content Pack Generation | Generate a complete local-life content package from shop, activity, audience, platform, and tone. |
+| Short Video Script      | Create a 30-second video script with timeline, camera direction, and on-screen copy. |
+| Shot List               | Generate practical filming shots such as storefront, product close-up, preparation process, real experience, and deal display. |
+| KOC Brief               | Create a concise brief for student KOCs or campus creators.  |
+| Image Generation        | Use `gpt-image-2` to generate Xiaohongshu-style cover images. |
+| Image Editing           | Upload product photos and improve them with AI image editing. |
+| Prompt Presets          | Choose from polished cover, commercial scene, or real-life creator style. |
+| Brand Guardrails        | Remove unrelated brand names, logos, packaging text, and replace them with the current shop name when needed. |
+| Copy Buttons            | Copy titles, note, script, brief, and full content package with one click. |
+| Local History           | Keep recent generations in browser local storage for quick reuse. |
+
+## Image Prompt Presets
+
+CampusBuzz AI includes three image prompt cards:
+
+1. **精修种草封面**  
+   Keeps the product realistic while improving lighting, composition, and texture for Xiaohongshu covers.
+
+2. **商业质感大片**  
+   Turns uploaded product images into polished commercial-style visuals for campaigns and group-buy pages.
+
+3. **真实探店增强**  
+   Preserves the student creator / real visit feeling while making the image cleaner and more publishable.
+
+Users can also write custom prompts. The app automatically injects shop context and brand constraints, so uploaded photos containing unrelated brands such as other milk-tea chains can be cleaned or replaced with the current shop name.
+
+## Use Cases
+
+- Milk tea shops, restaurants, accessory shops, beauty salons, gyms, board-game stores, and other small shops around campus
+- Local businesses that want to publish on Xiaohongshu or Douyin but lack content operation experience
+- Student KOCs and campus creators who need faster merchant brief generation
+- Early-stage AI startup opportunity validation for local-life content workflows
+
+## Tech Stack
+
+- **Frontend**: React, Vite, lucide-react, Nginx
+- **Backend**: FastAPI, httpx, Pydantic
+- **AI API**: OpenAI-compatible relay API
+- **Deployment**: Docker Compose
+
+## Environment Variables
+
+Copy `.env.example` to `.env` and configure your API relay:
 
 ```env
 AI_BASE_URL=https://your-relay.example.com/v1
@@ -49,7 +99,7 @@ IMAGE_MODEL=gpt-image-2
 MODEL_OPTIONS=gpt-5.4-mini,gpt-5.4,gpt-5.2,gpt-5.3-codex
 ```
 
-如果你使用的是历史兼容命名，也可以配置：
+Historical compatible naming is also supported:
 
 ```env
 RERANK_BASE_URL=https://your-relay.example.com/v1
@@ -58,27 +108,22 @@ AI_MODEL=gpt-5.4-mini
 IMAGE_MODEL=gpt-image-2
 ```
 
-## Docker 一键部署
+## Docker One-Command Deployment
 
-确保本机或服务器已安装 Docker 和 Docker Compose，然后在项目根目录执行：
+Make sure Docker and Docker Compose are installed, then run:
 
 ```bash
 docker compose up -d --build
 ```
 
-默认访问地址：
+Default URLs:
 
 ```text
-http://localhost:8080
+Frontend: http://localhost:8080
+Backend health check: http://localhost:8000/api/health
 ```
 
-后端健康检查：
-
-```text
-http://localhost:8000/api/health
-```
-
-如果 `8080` 端口被占用，可以在 `docker-compose.yml` 中修改前端端口：
+If port `8080` is already in use, edit `docker-compose.yml`:
 
 ```yaml
 frontend:
@@ -86,41 +131,31 @@ frontend:
     - "8090:80"
 ```
 
-然后重新启动：
+Then rebuild:
 
 ```bash
 docker compose up -d --build
 ```
 
-## 常用命令
-
-查看容器状态：
+## Common Commands
 
 ```bash
+# Show containers
 docker compose ps
-```
 
-查看日志：
-
-```bash
+# Follow logs
 docker compose logs -f
-```
 
-停止服务：
-
-```bash
+# Stop services
 docker compose down
-```
 
-重新构建：
-
-```bash
+# Rebuild and restart
 docker compose up -d --build
 ```
 
-## 本地开发
+## Local Development
 
-后端：
+Backend:
 
 ```bash
 cd backend
@@ -128,7 +163,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-前端：
+Frontend:
 
 ```bash
 cd frontend
@@ -136,7 +171,7 @@ npm install
 npm run dev
 ```
 
-## 项目结构
+## Project Structure
 
 ```text
 .
@@ -150,7 +185,13 @@ npm run dev
 │   ├── Dockerfile
 │   ├── nginx.conf
 │   └── package.json
+├── docs
+│   └── images
 ├── docker-compose.yml
 ├── .env.example
 └── README.md
 ```
+
+## Notes
+
+Image generation and image editing may take longer than text generation. The frontend Nginx config includes longer proxy timeouts and a larger upload limit for image workflows.
