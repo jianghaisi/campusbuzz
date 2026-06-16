@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+node_modules/
+dist/
+.npm-cache/
+
+__pycache__/
+*.py[cod]
+.venv/
+
+.DS_Store
+
+backend/image_smoke_output.png
+frontend/.vite-err.log
+frontend/.vite-out.log
