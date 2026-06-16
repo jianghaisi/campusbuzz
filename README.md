@@ -1,7 +1,7 @@
 <div align="center">
 
 
-# 校园周边小商家的本地生活内容 AI Copilot--CampusBuzz AI
+# **校园周边小商家的本地生活内容 AI Copilot**--CampusBuzz AI
 
 把一次门店活动、新品信息或产品图片，快速转化为小红书/抖音可发布的种草内容、短视频脚本、拍摄 brief 和封面图。
 
@@ -13,83 +13,108 @@
 
 </div>
 
-## Preview
+## 项目预览
 
-### Content Workbench
+### 内容生成工作台
 
-![CampusBuzz AI content workbench](docs/images/content-workbench.png)
+![CampusBuzz AI 内容生成工作台](docs/images/content-workbench.png)
 
-### Generated Content + Cover Workflow
+### 内容包与封面图工作流
 
-![CampusBuzz AI workspace results](docs/images/workspace-results.png)
+![CampusBuzz AI 内容包与封面图工作流](docs/images/workspace-results.png)
 
-### AI Generated Cover
+### AI 生成封面图
 
-![AI generated cover for Xinghe Milk Tea](docs/images/generated-cover.png)
+![星河奶茶 AI 生成封面图](docs/images/generated-cover.png)
 
-## What It Does
+## 项目介绍
 
-CampusBuzz AI is designed for campus-area local businesses that need short-form content but do not have a dedicated content team.
+CampusBuzz AI 是一个面向校园周边小商家的轻量 AI 内容工具。
 
-It helps merchants turn a simple activity brief into a full publishing package:
+很多学校附近的奶茶店、餐饮店、美甲店、饰品店、健身房、桌游店都知道要做小红书、抖音和本地生活团购，但实际运营时常遇到几个问题：
 
-- Xiaohongshu / Douyin titles
-- Publish-ready seed content note
-- 30-second short-video script
-- Shot-by-shot filming plan
-- KOC shooting brief
-- Comment reply templates
-- Store-visit conversion copy
-- Cover image prompt
-- AI-generated or AI-edited cover image
+- 不知道怎么把活动写成像真实种草的内容
+- 不会设计短视频脚本和拍摄分镜
+- 和学生 KOC 沟通成本高
+- 产品图不够好看，封面图不够吸引人
+- 请代运营成本高，自己发内容又不稳定
 
-## Key Features
+CampusBuzz AI 的目标是：让小商家只需要输入一次门店活动信息，就能得到一套可以直接执行的内容生产方案。
 
-| Feature                 | Description                                                  |
-| ----------------------- | ------------------------------------------------------------ |
-| Content Pack Generation | Generate a complete local-life content package from shop, activity, audience, platform, and tone. |
-| Short Video Script      | Create a 30-second video script with timeline, camera direction, and on-screen copy. |
-| Shot List               | Generate practical filming shots such as storefront, product close-up, preparation process, real experience, and deal display. |
-| KOC Brief               | Create a concise brief for student KOCs or campus creators.  |
-| Image Generation        | Use `gpt-image-2` to generate Xiaohongshu-style cover images. |
-| Image Editing           | Upload product photos and improve them with AI image editing. |
-| Prompt Presets          | Choose from polished cover, commercial scene, or real-life creator style. |
-| Brand Guardrails        | Remove unrelated brand names, logos, packaging text, and replace them with the current shop name when needed. |
-| Copy Buttons            | Copy titles, note, script, brief, and full content package with one click. |
-| Local History           | Keep recent generations in browser local storage for quick reuse. |
+## 核心功能
 
-## Image Prompt Presets
+| 功能            | 描述                                                         |
+| --------------- | ------------------------------------------------------------ |
+| 内容包生成      | 根据店铺名、店铺类型、活动、新品、目标人群和内容风格，生成完整种草内容包。 |
+| 小红书/抖音标题 | 生成适合种草平台的标题，强调真实感、场景感和转化点。         |
+| 种草笔记        | 生成可发布的本地生活种草笔记，避免生硬广告腔。               |
+| 30 秒短视频脚本 | 输出带时间轴的短视频脚本，包括画面安排、字幕和口播建议。     |
+| 拍摄分镜        | 生成门头、产品细节、制作过程、真人体验、价格权益等镜头规划。 |
+| KOC Brief       | 自动整理给学生探店博主的拍摄需求，减少商家和博主反复沟通。   |
+| 评论区回复      | 生成适合种草内容的评论回复话术，方便商家维护互动。           |
+| 封面图提示词    | 根据当前店铺和产品自动生成封面图 prompt。                    |
+| AI 图片生成     | 支持使用 `gpt-image-2` 生成小红书风格封面图。                |
+| 上传图片改图    | 支持上传奶茶、饭菜、饰品或其他产品图片，并基于提示词进行精修、场景化或商业质感增强。 |
+| 提示词卡片      | 内置“精修种草封面”“商业质感大片”“真实探店增强”三种图片提示词。 |
+| 自定义提示词    | 用户可以在内置模板基础上自由修改图片生成或改图要求。         |
+| 品牌约束        | 上传图片中如果包含无关品牌、店名、Logo 或包装文字，系统会提示模型删除或替换为当前店铺名。 |
+| 历史记录        | 浏览器本地保留最近生成的内容，方便回看和复用。               |
+| 一键复制        | 支持复制标题、笔记、脚本、KOC brief 和完整内容包。           |
 
-CampusBuzz AI includes three image prompt cards:
+## 图片提示词模板
 
-1. **精修种草封面**  
-   Keeps the product realistic while improving lighting, composition, and texture for Xiaohongshu covers.
+CampusBuzz AI 内置 3 种图片生成/改图方向：
 
-2. **商业质感大片**  
-   Turns uploaded product images into polished commercial-style visuals for campaigns and group-buy pages.
+### 1. 精修种草封面
 
-3. **真实探店增强**  
-   Preserves the student creator / real visit feeling while making the image cleaner and more publishable.
+适合小红书首图。保留主体真实样子，同时提升光线、构图、色彩和质感。
 
-Users can also write custom prompts. The app automatically injects shop context and brand constraints, so uploaded photos containing unrelated brands such as other milk-tea chains can be cleaned or replaced with the current shop name.
+适用场景：
 
-## Use Cases
+- 奶茶新品
+- 饭菜套餐
+- 饰品细节
+- 店内陈列
 
-- Milk tea shops, restaurants, accessory shops, beauty salons, gyms, board-game stores, and other small shops around campus
-- Local businesses that want to publish on Xiaohongshu or Douyin but lack content operation experience
-- Student KOCs and campus creators who need faster merchant brief generation
-- Early-stage AI startup opportunity validation for local-life content workflows
+### 2. 商业质感大片
 
-## Tech Stack
+适合活动海报、团购页、商家宣传图。画面更精致，商业感更强。
 
-- **Frontend**: React, Vite, lucide-react, Nginx
-- **Backend**: FastAPI, httpx, Pydantic
-- **AI API**: OpenAI-compatible relay API
-- **Deployment**: Docker Compose
+适用场景：
 
-## Environment Variables
+- 新品推广
+- 第二杯半价
+- 套餐团购
+- 节日活动
 
-Copy `.env.example` to `.env` and configure your API relay:
+### 3. 真实探店增强
+
+保留学生博主真实探店感，不做过度商业化处理，只让照片更干净、更好看。
+
+适用场景：
+
+- 学生 KOC 探店
+- 宿舍姐妹分享
+- 自习后顺路购买
+- 校园周边真实推荐
+
+## 适用用户
+
+- 校园附近奶茶店、餐饮店、美甲店、饰品店、健身房、桌游店等小商家
+- 想做小红书/抖音但缺少内容运营能力的本地商户
+- 接商单的学生 KOC、探店博主、校园代运营团队
+- 想验证本地生活内容 AI 机会的早期创业项目
+
+## 技术栈
+
+- 前端：React、Vite、lucide-react、Nginx
+- 后端：FastAPI、httpx、Pydantic
+- AI 接口：OpenAI-compatible API
+- 部署：Docker Compose
+
+## 环境变量
+
+复制 `.env.example` 为 `.env`，并填写你的模型中转站配置：
 
 ```env
 AI_BASE_URL=https://your-relay.example.com/v1
@@ -99,7 +124,7 @@ IMAGE_MODEL=gpt-image-2
 MODEL_OPTIONS=gpt-5.4-mini,gpt-5.4,gpt-5.2,gpt-5.3-codex
 ```
 
-Historical compatible naming is also supported:
+也兼容以下历史命名：
 
 ```env
 RERANK_BASE_URL=https://your-relay.example.com/v1
@@ -108,22 +133,27 @@ AI_MODEL=gpt-5.4-mini
 IMAGE_MODEL=gpt-image-2
 ```
 
-## Docker One-Command Deployment
+## Docker 一键部署
 
-Make sure Docker and Docker Compose are installed, then run:
+确保已经安装 Docker 和 Docker Compose，然后在项目根目录执行：
 
 ```bash
 docker compose up -d --build
 ```
 
-Default URLs:
+默认访问地址：
 
 ```text
-Frontend: http://localhost:8080
-Backend health check: http://localhost:8000/api/health
+http://localhost:8080
 ```
 
-If port `8080` is already in use, edit `docker-compose.yml`:
+后端健康检查：
+
+```text
+http://localhost:8000/api/health
+```
+
+如果 `8080` 端口被占用，可以修改 `docker-compose.yml`：
 
 ```yaml
 frontend:
@@ -131,31 +161,41 @@ frontend:
     - "8090:80"
 ```
 
-Then rebuild:
+然后重新启动：
 
 ```bash
 docker compose up -d --build
 ```
 
-## Common Commands
+## 常用命令
+
+查看容器状态：
 
 ```bash
-# Show containers
 docker compose ps
+```
 
-# Follow logs
+查看日志：
+
+```bash
 docker compose logs -f
+```
 
-# Stop services
+停止服务：
+
+```bash
 docker compose down
+```
 
-# Rebuild and restart
+重新构建并启动：
+
+```bash
 docker compose up -d --build
 ```
 
-## Local Development
+## 本地开发
 
-Backend:
+后端：
 
 ```bash
 cd backend
@@ -163,7 +203,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-Frontend:
+前端：
 
 ```bash
 cd frontend
@@ -171,7 +211,7 @@ npm install
 npm run dev
 ```
 
-## Project Structure
+## 项目结构
 
 ```text
 .
@@ -192,6 +232,13 @@ npm run dev
 └── README.md
 ```
 
-## Notes
+## 注意事项
 
-Image generation and image editing may take longer than text generation. The frontend Nginx config includes longer proxy timeouts and a larger upload limit for image workflows.
+- `.env` 中包含 API key，不要提交到 GitHub。
+- 图片生成和图片改图通常比文本生成慢，可能需要几十秒。
+- 项目内前端 Nginx 已设置较长的代理超时时间，适合图片生成和上传改图场景。
+
+## 社区支持
+
+学 AI，上 L 站：[linux.do/](https://linux.do/)
+
