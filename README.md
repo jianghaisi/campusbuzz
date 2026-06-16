@@ -1,4 +1,4 @@
-# CampusBuzz AI
+# 生活内容生成工具-CampusBuzz AI
 
 CampusBuzz AI 是一个面向校园周边小商家的本地生活内容生成工具。它可以把一次门店活动、新品信息或产品图片，快速转化为小红书/抖音可发布的种草内容、短视频脚本、拍摄 brief 和封面图。
 快速使用：https://campusbuzz.jiangai.space
